@@ -9,7 +9,7 @@ class Car
 
     Car(string a, string b, int c)
     {
-        make = a;
+        make=a;
         model=b;
         year=c;
     }
@@ -22,8 +22,21 @@ class Car
 
 int main()
 {
-    Car c1("BMW", "5 series", 2023);
-    c1.print();
+    string make, model;
+    int year;
 
+    Car c1("BMW", "5 series", 2023);
+
+    cout<<"Enter car make : ";
+    cin>>make;
+    cout<<"Enter car model : ";
+    cin>>model;
+    cout<<"Enter car model year : ";
+    cin>>year;
+
+    Car c2(make, model, year);
+    c2.print();
+    c1.print();
+    
     return 0;
 }
