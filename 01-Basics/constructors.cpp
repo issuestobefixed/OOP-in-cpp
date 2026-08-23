@@ -37,6 +37,9 @@ int main()
     Car c2(make, model, year);
     c2.print();
     c1.print();
+
+    Car c3("Mercedes", "S-Class", 2024);
+    c3.print();
     
     return 0;
 }
