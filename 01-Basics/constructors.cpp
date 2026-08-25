@@ -43,6 +43,9 @@ int main()
 
     Car c4("Mercedes", "E-Class", 2024);
     c4.print();
+
+    Car c5("Mercedes", "C-Class", 2024);
+    c5.print();
     
     return 0;
 }
