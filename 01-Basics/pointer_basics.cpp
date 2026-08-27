@@ -11,5 +11,11 @@ int main()
     cout<<"Address of p : "<<&p<<endl;
     cout<<"Val at the Address of p i.e dereference : "<<*p<<endl;
 
+    //Modifying val of x using pointer
+    
+    *p=50;
+    cout<<"Val of x : "<<x<<endl;
+    cout<<"Val at the Address of p i.e dereference : "<<*p<<endl;
+
     return 0;
 }
