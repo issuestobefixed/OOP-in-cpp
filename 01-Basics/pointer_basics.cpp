@@ -37,5 +37,6 @@ int main()
     p2++;
     cout<<"Third element of array through pointer p2 : "<<*p2<<endl;
     
+    
     return 0;
 }
