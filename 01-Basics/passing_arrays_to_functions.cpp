@@ -14,16 +14,16 @@ void print(int a[][3])
 }
 void printer(int *ptr)
 {
-    for (int i = 0; i < 3; i++)
+    for (int i=0;i<3;i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (int j=0;j<3;j++)
         {
-            cout << *(ptr + i * 3 + j) << " ";
+            cout<<*(ptr+i*3+j)<<" ";
         }
-
-        cout << endl;
+        cout<<endl;
     }
 }
+
 int main()
 {
     int ch;
@@ -43,4 +43,5 @@ int main()
     {
         cout<<"Invalid Choice"<<endl;
     }
+    return 0;
 }
