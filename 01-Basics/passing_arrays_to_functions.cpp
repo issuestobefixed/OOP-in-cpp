@@ -30,7 +30,7 @@ int main()
     int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
     cout<<"1. Normal Passing of array?"<<endl;
     cout<<"2. Passing through pointer?"<<endl;
-    cout<<"3. End Program?"<<endl;
+    cout<<"3. want to end program?"<<endl;
     cin>>ch;
     if(ch==1)
     {
