@@ -2,28 +2,49 @@
 using namespace std;
 int main()
 {
-    int arr[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    int arr2[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    int *ptr=&arr[0][0];
+    int arr1[2][2]={};
+    int arr2[2][2]={};
+    int *ptr1=&arr1[0][0];
     int *ptr2=&arr2[0][0];
-    int arr3[3][3]={};
-    for (int i=0;i<3;i++)
+    for(int i=0;i<2;i++)
     {
-        for (int j=0;j<3;j++)
+        for(int j=0;j<2;j++)
         {
-            arr3[i][j]=*ptr+*ptr2;
-            ptr++;
+            cout<<"Enter element ["<<i<<"]["<<j<<"] of array 1 : ";
+            cin>>*ptr1;
+            ptr1++;
+        }
+    }
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+            cout<<"Enter element ["<<i<<"]["<<j<<"] of array 2 : ";
+            cin>>*ptr2;
             ptr2++;
         }
-        cout<<endl;
     }
-    for (int i=0;i<3;i++)
+
+    // Reset pointers
+    ptr1 = &arr1[0][0];
+    ptr2 = &arr2[0][0];
+
+    cout<<"Matrix 1 : "<<endl;
+    for(int i=0;i<2;i++)
     {
-        for (int j=0;j<3;j++)
+        for(int j=0;j<2;j++)
         {
-            cout<<arr3[i][j]<<" ";
+            cout<<*(ptr1+i*2+j)<<" ";
         }
         cout<<endl;
     }
-    return 0;
+    cout<<"Matrix 2 : "<<endl;
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+            cout<<*(ptr2+i*2+j)<<" ";
+        }
+        cout<<endl;
+    }
 }
