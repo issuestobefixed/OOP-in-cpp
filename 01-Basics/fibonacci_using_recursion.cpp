@@ -15,7 +15,7 @@ int fibonacci(int input)
 int main()
 {
     int input=0;
-    cout<<"Enter a number up to which you want to calculate the Fibonacci series : ";
+    cout<<"Enter a number to which you want to calculate the Fibonacci series : ";
     cin>>input;
     cout<<fibonacci(input)<<" ";
     return 0;
