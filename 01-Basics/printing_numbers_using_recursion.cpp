@@ -8,8 +8,8 @@ void print(int x)
     }
     else
     {
-       print(x-1);
        cout<<x<<" ";
+       print(x-1);
     }
 }
 int main()
