@@ -8,7 +8,7 @@ int power(int x, int pow)
     }
     else
     {
-        return x*power(x, pow-1);
+        return x * power(x, pow-1);
     }
 }
 int main()
