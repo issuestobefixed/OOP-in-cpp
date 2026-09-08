@@ -9,6 +9,5 @@ class Cat(Animal):
         super().talk()
         print("Meow")
         
-        
 tom=Cat()
 tom.talk()
