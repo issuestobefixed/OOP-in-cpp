@@ -23,7 +23,7 @@ int main()
 
 	for (int i = 0;i < 5;i++)
 	{
-		cout << "Enter " << i << " : ";
+		cout << "Enter (integer only) " << i << " : ";
 		cin >> arr[i];
 	}
 	cout << "Recieved Array : ";
