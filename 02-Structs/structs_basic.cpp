@@ -7,12 +7,25 @@ int main()
         int age=0;
         float GPA=0;
         string name;
+
+        void print(Student s)
+        {
+            cout<<"===== Printing Outputs ====="<<endl;
+            cout<<"Name : "<<s.name<<endl;
+            cout<<"GPA  : "<<s.GPA<<endl;
+            cout<<"Age  : "<<s.age<<endl;
+        }
     };
 
-    Student s1{20, 3.12, "Arham"};
+    Student s1;
 
-    cout<<"Name : "<<s1.name<<endl;
-    cout<<"GPA  : "<<s1.GPA<<endl;
-    cout<<"Age  : "<<s1.age<<endl;
+    cout<<"Enter Name : ";
+    cin>>s1.name;
+    cout<<"Enter GPA  : ";
+    cin>>s1.GPA;
+    cout<<"Enter Age  : ";
+    cin>>s1.age;
+
+    s1.print(s1);
     return 0;
 }
