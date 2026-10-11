@@ -3,20 +3,20 @@ using namespace std;
 class Student
 {
     public:
-    int value;
-    void setValue(int v)
+    int marks;
+    Student setValue(int v)
     {
-        value=v;
+        marks=v;
     }
-    Student operator+(Student obj)
+    Student operator + (Student obj)
     {
         Student temp;
-        temp.value=value+obj.value;
+        temp.marks=marks+obj.marks;
         return temp;
     }
     void display()
     {
-        cout<<value<<endl;
+        cout<<marks<<endl;
     }
 };
 int main()
